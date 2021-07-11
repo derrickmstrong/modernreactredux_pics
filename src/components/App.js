@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import SearchBar from './SearchBar';
 
-class App extends React.Component {
+class App extends Component {
   onSearchSubmit(term) {
     console.log(term);
   }
@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='ui container'>
-        <SearchBar onSubmit={this.onSearchSubmit} />
+        <SearchBar onSubmitValue={this.onSearchSubmit} />
       </div>
     );
   }
