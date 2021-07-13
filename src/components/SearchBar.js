@@ -15,7 +15,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className='ui segment'>
+      <div className='ui segment' style={{marginTop: '50px'}}>
         <form onSubmit={this.onFormSubmit} className='ui form'>
           <div className='field'>
             <label>Image Search</label>
@@ -24,6 +24,7 @@ class SearchBar extends Component {
               type='text'
               value={this.state.term}
               onChange={(e) => this.setState({ term: e.target.value })}
+              placeholder='Search for images here'
             />
           </div>
         </form>
